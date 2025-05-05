@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1508766206392-8bd5cf550d1b') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1508766206392-8bd5cf550d1b?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
       display: flex;
@@ -19,10 +19,10 @@
     .form-container {
       background: rgba(0, 0, 0, 0.7);
       padding: 30px;
-      border-radius: 12px;
+      border-radius: 15px;
       max-width: 400px;
       width: 100%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     }
     h2 {
       text-align: center;
@@ -38,6 +38,7 @@
       border: none;
       border-radius: 5px;
       margin-bottom: 15px;
+      font-size: 14px;
     }
     button {
       background-color: #28a745;
@@ -60,8 +61,18 @@
     <form>
       <label for="name">Name</label>
       <input type="text" id="name" name="name" placeholder="Your name" required />
-      
+
       <label for="email">Email</label>
       <input type="email" id="email" name="email" placeholder="Your email" required />
-      
-      <label for="phone">Mobile Number</label
+
+      <label for="phone">Mobile Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your mobile number" required />
+
+      <label for="message">Why do you want to travel solo?</label>
+      <textarea id="message" name="message" placeholder="Tell us a bit about yourself..." rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
