@@ -12,39 +12,41 @@
       background-size: cover;
       background-position: center;
       height: 100vh;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
     }
 
     h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: 3em;
+      margin-bottom: 0.5em;
     }
 
     p {
-      font-size: 20px;
-      margin-bottom: 40px;
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
     }
 
     .button {
       padding: 15px 30px;
       font-size: 18px;
-      background-color: rgba(40, 167, 69, 0.8);
+      background-color: #28a745;
       color: white;
       border: none;
       border-radius: 8px;
-      text-decoration: none;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      text-decoration: none;
+      transition: transform 0.3s, background-color 0.3s;
     }
 
     .button:hover {
-      background-color: rgba(33, 136, 56, 0.8);
+      background-color: #218838;
+      transform: scale(1.05);
     }
   </style>
 </head>
