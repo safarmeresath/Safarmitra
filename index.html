@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Safarmitra - Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Safarmitra</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f2f2f2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #e6f7ff, #ccf2ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
+
     h1 {
-      color: #333;
+      color: #003366;
+      font-size: 36px;
     }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+
     .button {
-      margin-top: 30px;
-      padding: 15px 30px;
+      padding: 15px 35px;
       font-size: 18px;
       background-color: #28a745;
       color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
-      cursor: pointer;
+      transition: 0.3s;
     }
+
     .button:hover {
       background-color: #218838;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Safarmitra</h1>
+  <h1>Welcome to <strong>Safarmitra</strong></h1>
   <p>Experience solo travel with ease and excitement!</p>
   <a href="form.html" class="button">Join Now</a>
 </body>
