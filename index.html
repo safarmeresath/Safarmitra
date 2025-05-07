@@ -8,74 +8,76 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
-    header {
-      background-color: #1e3d59;
-      color: white;
-      padding: 15px 20px;
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
+    nav .logo {
+      font-size: 24px;
       font-weight: bold;
     }
-    nav a:hover {
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav ul li a:hover {
       text-decoration: underline;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1508766206392-8bd5cf550d1b?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      color: white;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       text-align: center;
-      padding: 20px;
+      margin-top: 100px;
     }
     .hero h1 {
       font-size: 48px;
+      margin-bottom: 20px;
     }
     .hero p {
       font-size: 20px;
-      max-width: 600px;
+      margin-bottom: 40px;
     }
-    .btn {
+    .hero a {
+      padding: 12px 24px;
       background-color: #28a745;
       color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      margin-top: 20px;
-      cursor: pointer;
       text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
     }
-    .btn:hover {
+    .hero a:hover {
       background-color: #218838;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h2>Safarmitra</h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="join.html">Join Trip</a>
-      <a href="feedback.html">Feedback</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
+  <nav>
+    <div class="logo">Safarmitra</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="join.html">Join Trip</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
   <div class="hero">
-    <h1>Discover Yourself with Safarmitra</h1>
-    <p>Solo Trips | New Bonds | Forest Vibes</p>
-    <a href="join.html" class="btn">Join Now</a>
+    <h1>Welcome to Safarmitra</h1>
+    <p>Discover new places and meet amazing people</p>
+    <a href="join.html">Join Now</a>
   </div>
 </body>
 </html>
