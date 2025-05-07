@@ -3,81 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Safarmitra</title>
+  <title>Safarmitra - Home</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
+      height: 100vh;
     }
     nav {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
     }
-    nav .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-    nav ul li {
-      display: inline;
-    }
-    nav ul li a {
+    nav a {
       color: white;
+      margin: 0 20px;
       text-decoration: none;
-      font-weight: 500;
+      font-size: 18px;
     }
-    nav ul li a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
-    .hero {
+    .welcome {
       text-align: center;
-      margin-top: 100px;
+      margin-top: 200px;
     }
-    .hero h1 {
+    h1 {
       font-size: 48px;
       margin-bottom: 20px;
     }
-    .hero p {
+    p {
       font-size: 20px;
-      margin-bottom: 40px;
-    }
-    .hero a {
-      padding: 12px 24px;
-      background-color: #28a745;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 5px;
-    }
-    .hero a:hover {
-      background-color: #218838;
     }
   </style>
 </head>
 <body>
   <nav>
-    <div class="logo">Safarmitra</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="join.html">Join Trip</a></li>
-      <li><a href="#">Feedback</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="join.html">Join Trip</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="contact.html">Contact</a>
   </nav>
-  <div class="hero">
+
+  <div class="welcome">
     <h1>Welcome to Safarmitra</h1>
-    <p>Discover new places and meet amazing people</p>
-    <a href="join.html">Join Now</a>
+    <p>Explore solo journeys with trusted travel companions.</p>
   </div>
 </body>
 </html>
