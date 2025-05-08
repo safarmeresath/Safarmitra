@@ -3,22 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Safarmitra</title>
+  <title>Safarmitra - Home</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
+      min-height: 100vh;
     }
-
     nav {
       background-color: rgba(0, 0, 0, 0.8);
       width: 100%;
-      text-align: center;
       padding: 15px 0;
       position: fixed;
       top: 0;
       left: 0;
       z-index: 1000;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .container {
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .trip-card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    .trip-card h2 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #00e676;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="join.html">Join Trip</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to Safarmitra</h1>
+    <p>Your companion for unforgettable solo journeys.</p>
+
+    <div class="trip-card">
+      <h2>Upcoming Trip: Meghalaya</h2>
+      <p><strong>Date:</strong> 5 July 2025<br>
+         <strong>Duration:</strong> 4 Days<br>
+         <strong>Cost:</strong> ₹6000<br>
+         <strong>Includes:</strong> Stay, Food, Travel</p>
+    </div>
+  </div>
+</body>
+</html>
