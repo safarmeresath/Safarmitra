@@ -3,45 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Safarmitra - Home</title>
+  <title>Safarmitra</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1508766206392-8bd5cf550d1b?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
-      height: 100vh;
     }
     nav {
       background-color: rgba(0, 0, 0, 0.8);
-      width: 100%;
-      text-align: center;
-      padding: 15px 0;
+      padding: 15px;
       position: fixed;
+      width: 100%;
       top: 0;
       left: 0;
       z-index: 1000;
+      text-align: center;
     }
     nav a {
-      color: white;
+      color: #fff;
       margin: 0 20px;
       text-decoration: none;
       font-size: 18px;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .welcome {
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      margin-top: 200px;
+      padding-top: 60px;
     }
-    h1 {
+    .hero h1 {
       font-size: 48px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
-    p {
+    .hero p {
       font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .hero a button {
+      background-color: #00b894;
+      border: none;
+      padding: 15px 25px;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero a button:hover {
+      background-color: #019875;
+    }
+    #upcoming {
+      padding: 50px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
+      text-align: center;
+    }
+    .trip-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .trip-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .trip-card h3 {
+      margin-top: 15px;
+    }
+    .trip-card p {
+      margin: 5px 0;
+    }
+    .trip-card a button {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .trip-card a button:hover {
+      background-color: #218838;
     }
   </style>
 </head>
@@ -53,9 +104,25 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="welcome">
-    <h1>Welcome to Safarmitra</h1>
-    <p>Explore solo journeys with trusted travel companions.</p>
+  <div class="hero">
+    <div>
+      <h1>Welcome to Safarmitra</h1>
+      <p>Your ultimate companion for solo travel adventures</p>
+      <a href="join.html"><button>Join Now</button></a>
+    </div>
   </div>
+
+  <section id="upcoming">
+    <h2>Upcoming Trip</h2>
+    <div class="trip-card">
+      <img src="https://images.unsplash.com/photo-1611497361789-55f1b9d3a3cf?auto=format&fit=crop&w=800&q=80" alt="Meghalaya Trip">
+      <h3>Meghalaya Adventure</h3>
+      <p><strong>Date:</strong> 5 July 2025</p>
+      <p><strong>Duration:</strong> 4 Days / 3 Nights</p>
+      <p><strong>Cost:</strong> ₹6,000</p>
+      <p>Explore waterfalls, root bridges, and nature with like-minded travelers!</p>
+      <a href="join.html"><button>Join This Trip</button></a>
+    </div>
+  </section>
 </body>
 </html>
